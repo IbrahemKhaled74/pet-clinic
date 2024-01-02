@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Setter
 @Getter
 public class Visit extends BaseEntity {
-    LocalDate date;
-    String description;
-    Pet pet;
+    private LocalDate date;
+    private String description;
+    private Pet pet;
 }

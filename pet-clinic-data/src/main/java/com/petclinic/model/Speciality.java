@@ -6,5 +6,5 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Speciality extends BaseEntity{
-    String description;
+    private String description;
 }

@@ -8,5 +8,5 @@ import java.util.Set;
 @Setter
 @Getter
 public class Vet extends Person {
-    Set<Speciality>specialities;
+    private Set<Speciality>specialities;
 }
