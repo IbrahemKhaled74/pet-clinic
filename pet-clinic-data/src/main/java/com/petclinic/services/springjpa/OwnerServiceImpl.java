@@ -47,7 +47,7 @@ public class OwnerServiceImpl implements OwnerService {
     }
 
     @Override
-    public Owner finByLastName(String lastName) {
-        return ownerRepository.finByLastName(lastName).get();
+    public Owner findByLastName(String lastName) {
+        return ownerRepository.findByLastName(lastName).orElse(null);
     }
 }
