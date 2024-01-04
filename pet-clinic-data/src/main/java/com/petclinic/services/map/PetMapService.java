@@ -4,10 +4,12 @@ import com.petclinic.model.Owner;
 import com.petclinic.model.Pet;
 import com.petclinic.services.CrudService;
 import com.petclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
+@Profile("map")
 public class PetMapService extends AbstractMapService<Pet,Long> implements PetService {
     @Override
     public Set<Pet> findAll() {

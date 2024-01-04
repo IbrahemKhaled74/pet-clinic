@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.HashSet;
 import java.util.Set;
 @Service
-@Profile("springjpa")
+@Profile({"default","springjpa"})
 public class VetServiceImpl implements VetService {
     private final VetRepository vetRepository;
 
